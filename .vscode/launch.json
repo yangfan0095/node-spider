@@ -9,7 +9,8 @@
             "type": "node",
             "request": "launch",
             "name": "启动程序",
-            "program": "${workspaceRoot}/scrapy/getData.js"
+            // "program": "${workspaceRoot}/fangtianxia/spider.js"
+            "program": "${workspaceRoot}/gushiwen/getData.js"
         },
         {
             "type": "node",

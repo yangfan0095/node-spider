@@ -13,7 +13,9 @@
     "colors": "^1.1.2",
     "multi-progress": "^1.0.0",
     "request": "^2.64.0",
-    "iconv-lite":"^0.4.18"
+    "iconv-lite":"^0.4.18",
+    "mongoose": "^4.6.5",
+    "q": "^1.4.1"
 
   }
 }
