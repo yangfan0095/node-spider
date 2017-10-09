@@ -196,7 +196,7 @@ let getChapter = function (obj) {
                 let savedCollection = new savedDB({
                     dbName: curBookDB,
                     bookName: bookName,
-                })
+                });
                 savedCollection.save().then(function (res) {
                     console.log('---------getChapter 函数正常状态执行 execCallback()------------')
                     watcher.execCallback()
