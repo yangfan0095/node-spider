@@ -9,7 +9,7 @@ mongoose.Promise = q.Promise;
 let options = {
     server: { poolSize: 5 }
 }
-let db = mongoose.connect('mongodb://localhost:27017/guwenbookDB', options);
+let db = mongoose.connect('mongodb://47.52.115.169/guwenbookDB', options);
 mongoose.connection.on('connected', function () {
     console.log("数据库 连接成功");
 })

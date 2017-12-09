@@ -6,7 +6,7 @@ var mongoose = require("mongoose");
 var q = require('q');
 
 mongoose.Promise = q.Promise;
-mongoose.connect('mongodb://localhost:27017/guwenBackUp');
+mongoose.connect('mongodb://47.52.115.169:27017/guwenBackUp');
 mongoose.connection.on('connected', function () {
     console.log("数据库 连接成功");
 })

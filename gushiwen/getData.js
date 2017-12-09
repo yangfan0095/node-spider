@@ -11,9 +11,9 @@ let options = {
     server: { poolSize: 5 }
 }
 mongoose.Promise = q.Promise;
-let conno = mongoose.createConnection('mongodb://localhost:27017/guwen',options);
+let conno = mongoose.createConnection('mongodb://47.52.115.169/guwen',options);
 mongoose.connection.on('connected', function () {
-    console.log("数据库 连接成功");
+    console.log("远程数据库 连接成功");
 })
 let bookMap = mongoose.Schema({
     dbName: String,

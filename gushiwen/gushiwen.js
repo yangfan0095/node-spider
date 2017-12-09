@@ -15,7 +15,6 @@ var bookItem = mongoose.Schema({
     name: String,
     author: String,
     chapter: String,
-
     content: String,
     title: String,
     translator: String,
