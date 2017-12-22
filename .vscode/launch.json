@@ -12,7 +12,7 @@
             // "program": "${workspaceRoot}/fangtianxia/spider.js"
             // "program": "${workspaceRoot}/fangtianxia/go.js"
             // "program": "${workspaceRoot}/fangtianxia/getZoneInfo.js"
-            "program": "${workspaceRoot}/gushiwen/getData.js"
+            "program": "${workspaceRoot}/gushiwen/chapter.js"
         },
         {
             "type": "node",
