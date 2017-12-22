@@ -352,24 +352,3 @@ module.exports = {
         init(url, bookName, dbName, callback)
     }
 };
-
-
-
-
-//曲线救国 正则表达式 
-// let aaa = data.replace(/<p.*?>/g,"")
-// let aaa = data.replace(/<\/p.*?>/g,"/n")
-
-//  let replaceFront = {
-//     reg:/<p.*?>/g ,
-//     replace:''
-// };
-//  let replaceEnd = {
-//     reg:/<\/p.*?>/g,
-//     replace:'\\n'
-// }
-//  let reg = function(str,reg,replace,callback){
-//     return str.replace(reg,replace)
-// }
-//  let content = reg($('.shisoncont').html(),replaceFront.reg,replaceFront.replace).replace(replaceEnd.reg,replaceEnd.replace);
-//  let ddd = content.replace(/<[^>|^br].*?>/g,'')
