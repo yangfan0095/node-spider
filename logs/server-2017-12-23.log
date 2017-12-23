@@ -1,0 +1,21 @@
+[2017-12-23T10:33:21.372] [INFO] appenders - 开始抓取:http://so.gushiwen.org/guwen/book_2.aspx
+[2017-12-23T10:33:22.517] [INFO] appenders - 论语数据抓取结束,开始保存...
+[2017-12-23T10:33:22.798] [INFO] appenders - 当前数据库已保存0
+[2017-12-23T10:34:51.183] [INFO] appenders - 开始抓取:http://so.gushiwen.org/guwen/book_2.aspx
+[2017-12-23T10:34:51.293] [INFO] appenders - 论语数据抓取结束,开始保存...
+[2017-12-23T10:34:51.576] [INFO] appenders - 当前数据库已保存4
+[2017-12-23T10:34:51.577] [WARN] appenders - 抓取数据与数据库保存数据默认条数相同，默认已存在，执行下一条数据。bookName:论语dbName: guwenbook20
+[2017-12-23T10:34:51.578] [INFO] appenders - 开始抓取:http://so.gushiwen.org/guwen/book_4.aspx
+[2017-12-23T10:34:51.658] [INFO] appenders - 三十六计数据抓取结束,开始保存...
+[2017-12-23T10:34:51.936] [INFO] appenders - 当前数据库已保存4
+[2017-12-23T10:34:51.937] [WARN] appenders - 抓取数据与数据库保存数据默认条数相同，默认已存在，执行下一条数据。bookName:三十六计dbName: guwenbook21
+[2017-12-23T10:34:51.938] [INFO] appenders - 开始抓取:http://so.gushiwen.org/guwen/book_1.aspx
+[2017-12-23T10:34:52.045] [INFO] appenders - 山海经数据抓取结束,开始保存...
+[2017-12-23T10:34:52.323] [INFO] appenders - 当前数据库已保存4
+[2017-12-23T10:34:52.324] [WARN] appenders - 抓取数据与数据库保存数据默认条数相同，默认已存在，执行下一条数据。bookName:山海经dbName: guwenbook23
+[2017-12-23T10:34:52.325] [INFO] appenders - 开始抓取:http://so.gushiwen.org/guwen/book_5.aspx
+[2017-12-23T10:34:52.443] [INFO] appenders - 史记数据抓取结束,开始保存...
+[2017-12-23T10:34:52.721] [INFO] appenders - 当前数据库已保存4
+[2017-12-23T10:34:52.722] [INFO] appenders - 当前爬虫自动休眠1283.4703253204634ms
+[2017-12-23T10:36:18.960] [ERROR] appenders - 数据插入失败，进入下一组!bookName:史记dbName: guwenbook22
+[2017-12-23T10:36:18.962] [INFO] appenders - 开始抓取:http://so.gushiwen.org/guwen/book_3.aspx

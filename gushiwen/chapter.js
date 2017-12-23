@@ -35,7 +35,7 @@ let chapterMap = mongoose.Schema({
     author: String,
 })
 let bookListModel = conno.model('booklists', bookMap);
-let chapterListModel = conno.model('chapterlists', chapterMap);
+let chapterListModel = conno.model('chapterlistBK', chapterMap);
 let bookList = new bookListModel();
 let chapterInstance = new chapterListModel();
 const origin = 'http://so.gushiwen.org';
@@ -69,7 +69,7 @@ const asyncGetChapter = (list) => {
         if (err) {
             console.log(err);
         }
-        logger.info('数据抓取结束:' + curDbName);
+        logger.info('数据抓取结束:');
 
     })
 }
@@ -176,6 +176,8 @@ const saveMongoDB = async(chapterList, callback) => {
         return;
     }
     console.time('mongoSaveSpendTime');
+    let num = Math.random() * 700 + 800;
+    await sleep(num);
     chapterListModel.collection.insert(chapterList, (err, doc) => {
         if (err) {
             logger.error('数据插入失败，进入下一组!' + 'bookName:' + bookName + 'dbName: ' + curDbName);
@@ -184,8 +186,6 @@ const saveMongoDB = async(chapterList, callback) => {
         }
         console.timeEnd('mongoSaveSpendTime');
         logger.info('数据保存成功!' + 'bookName:' + bookName + 'dbName: ' + curDbName);
-        let num = Math.random() * 700 + 800;
-        await sleep(num);
         console.timeEnd('bookSpendAllTime');
         callback(null, null);
     })
@@ -196,7 +196,8 @@ const saveMongoDB = async(chapterList, callback) => {
  */
 const sleep = async(times) => {
     logger.info('当前爬虫自动休眠' + times + 'ms');
-    let res = await setTimeout(() => true, times);
-    return res;
+    await new Promise((resolve) => {
+        setTimeout(resolve, times);
+    })
+    return true;
 }
-// 保存章节信息和 链接到mongodb
